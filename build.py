@@ -6,10 +6,10 @@ import codecs
 
 def setup_doctest():
     u = 'Ivan Krsti\xc4\x87'.decode('utf-8')
-    f = open('/tmp/ivan_utf8.txt','w')
+    f = open('./tmp/ivan_utf8.txt','w')
     f.write(u.encode('utf-8'))
     f.close()
-    f = open('/tmp/ivan_utf16.txt','w')
+    f = open('./tmp/ivan_utf16.txt','w')
     f.write(u.encode('utf-16'))
     f.close()
 
